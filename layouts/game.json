@@ -237,11 +237,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "YellowBubble.png",
+                  "image": "Yellow",
                   "points": [
                     {
                       "name": "Right",
@@ -309,11 +310,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "GreenBubble.png",
+                  "image": "Green",
                   "points": [
                     {
                       "name": "Right",
@@ -700,11 +702,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "YellowBubble.png",
+                  "image": "Yellow2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -828,11 +831,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "GreenBubble.png",
+                  "image": "Green2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1032,11 +1036,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "GreenBubble.png",
+                  "image": "Green3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1061,11 +1066,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "YellowBubble.png",
+                  "image": "Yellow3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

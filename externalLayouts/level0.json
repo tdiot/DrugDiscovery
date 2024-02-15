@@ -1085,16 +1085,15 @@
   ],
   "editionSettings": {
     "grid": true,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 16,
     "gridHeight": 28,
     "gridOffsetX": 0,
     "gridOffsetY": 16,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 16,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": true,
-    "windowMask": false,
-    "zoomFactor": 1
+    "zoomFactor": 1,
+    "windowMask": false
   }
 }
