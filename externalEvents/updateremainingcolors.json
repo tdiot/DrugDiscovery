@@ -1,0 +1,87 @@
+{
+  "associatedLayout": "Game",
+  "lastChangeTimeStamp": 0,
+  "name": "UpdateRemainingColors",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Find which colors are still on the board because only these colors will be given to the player when he shoots."
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "VariableClearChildren"
+          },
+          "parameters": [
+            "remainingColors"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+      "iterableVariableName": "colors",
+      "valueIteratorVariableName": "color",
+      "keyIteratorVariableName": "index",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimationName"
+          },
+          "parameters": [
+            "BoardBubble",
+            "VariableString(color)"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SceneVariablePushString"
+          },
+          "parameters": [
+            "remainingColors",
+            "VariableString(color)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Egal"
+          },
+          "parameters": [
+            "VariableChildCount(remainingColors)",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "levelCompleted",
+            "True"
+          ]
+        }
+      ]
+    }
+  ]
+}

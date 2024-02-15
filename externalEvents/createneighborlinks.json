@@ -1,0 +1,116 @@
+{
+  "associatedLayout": "Game",
+  "lastChangeTimeStamp": 0,
+  "name": "CreateNeighborLinks",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "The BoardBubble is linked with its shadow LinkBubble..."
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionPoint"
+          },
+          "parameters": [
+            "BoardBubble",
+            "LinkBubble.X()",
+            "LinkBubble.Y()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "BoardBubble",
+            "LinkBubble"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "...and the shadow LinkBubble is linked to its neighbors.\nSo, the BoardBubbles are linked to their neighbors through LinkBubbles.\nThis is needed because the link action can't be used on 2 BoardBubble direcly.\n\nThis links are used to look for aggregations of bubbles of a same color.\n(See the \"Board resolution\" section)"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "LinkTools::LinkHexagonalNeighbors"
+          },
+          "parameters": [
+            "",
+            "LinkBubble",
+            "BoardBubble",
+            "32",
+            "32",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Link the 1st bubble row to the top border. This will allow to look for unheld bubbles.\n(See the \"Board resolution - Unheld bubles\" section)"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionPoint"
+          },
+          "parameters": [
+            "TopBorder",
+            "LinkBubble.X()",
+            "LinkBubble.Y() - 32"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "TopBorder",
+            "LinkBubble"
+          ]
+        }
+      ]
+    }
+  ]
+}
