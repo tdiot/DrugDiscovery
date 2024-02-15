@@ -322,6 +322,15 @@
         "name": "Red3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Background.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Background",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

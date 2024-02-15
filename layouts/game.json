@@ -153,7 +153,7 @@
       "persistentUuid": "b21107d6-61ef-43ae-9d45-209d3d84434d",
       "width": 0,
       "x": 144,
-      "y": 452,
+      "y": 498,
       "zOrder": 68,
       "numberProperties": [],
       "stringProperties": [],
@@ -168,7 +168,7 @@
       "persistentUuid": "3007bc8e-0dbe-415c-b428-f048fafc109d",
       "width": 0,
       "x": 144,
-      "y": 404,
+      "y": 450,
       "zOrder": 69,
       "numberProperties": [],
       "stringProperties": [],
@@ -215,6 +215,22 @@
       "x": -16,
       "y": -64,
       "zOrder": 90,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 869,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "1b286319-9a64-41fc-919d-99540a836538",
+      "width": 982,
+      "x": 331,
+      "y": -95,
+      "zOrder": 69,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1940,36 +1956,65 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "NewPanelSprite",
-      "rightMargin": 0,
-      "texture": "",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
       "name": "Background",
-      "rightMargin": 0,
-      "texture": "New image",
-      "tiled": true,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Background",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Background",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2016,9 +2061,6 @@
       },
       {
         "objectName": "TopBorder"
-      },
-      {
-        "objectName": "NewPanelSprite"
       },
       {
         "objectName": "Background"
@@ -3421,6 +3463,38 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 1702453580,
       "ambientLightColorG": 6022704,
