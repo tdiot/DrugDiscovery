@@ -234,6 +234,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 812,
+      "layer": "",
+      "name": "NewBBText",
+      "persistentUuid": "243f48b2-7776-4e1c-872b-2a250c752c7c",
+      "width": 903,
+      "x": 361,
+      "y": 26,
+      "zOrder": 91,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2015,6 +2031,24 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBBText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Comment ça marche le traitement du cancer ?[b]\n\nLa bulle au niveau du lanceur représente une chimiothérapie (un médicament contre le cancer).\nLe but est de l'envoyer sur les cellules cancéreuses de la même couleur pour pouvoir les éliminer.\n\nComme tu peux le voir, il y a plusieurs couleurs de cellules tumorales et de chimiothérapies.\nComme les cellules tumorales peuvent avoir différentes faiblesses en fonction du type de cancer, il est nécessaire de choisir la chimiothérapie appropriée pour traiter le cancer efficacement.",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Sniglet-Regular.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2064,6 +2098,9 @@
       },
       {
         "objectName": "Background"
+      },
+      {
+        "objectName": "NewBBText"
       }
     ]
   },

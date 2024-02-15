@@ -331,6 +331,20 @@
         "name": "Background",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "Sniglet-ExtraBold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Sniglet-ExtraBold.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "Sniglet-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Sniglet-Regular.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
