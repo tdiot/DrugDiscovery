@@ -11,8 +11,8 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
-    "orientation": "portrait",
-    "packageName": "com.example.bimbam",
+    "orientation": "default",
+    "packageName": "com.example.drugdiscovery",
     "pixelsRounding": false,
     "projectUuid": "5e4ce032-394e-4c60-a02e-5a49a9f635a8",
     "scaleMode": "linear",
@@ -20,11 +20,11 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.1",
-    "name": "BimBam",
-    "description": "This is a game example to show how to use a graph extension to create match-3 games with GDevelop. The source can be found directly in GDevelop in the examples list.\n\nControls are arrows and left-shift or mouse.",
+    "name": "DrugDiscovery",
+    "description": "",
     "author": "",
-    "windowWidth": 272,
-    "windowHeight": 483,
+    "windowWidth": 1280,
+    "windowHeight": 720,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -79,9 +79,7 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [
-      "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
-    ],
+    "authorIds": [],
     "authorUsernames": [],
     "categories": [
       "action"
@@ -252,6 +250,10 @@
     }
   ],
   "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/level0_test"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/level0"

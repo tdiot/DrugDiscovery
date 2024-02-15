@@ -9,7 +9,7 @@
   "title": "",
   "v": 46,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 16,
     "gridHeight": 28,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.9866667495727527,
+    "snap": false,
+    "zoomFactor": 0.9233457991380384,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1923,6 +1923,38 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "NewPanelSprite",
+      "rightMargin": 0,
+      "texture": "",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "Background",
+      "rightMargin": 0,
+      "texture": "New image",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1969,6 +2001,12 @@
       },
       {
         "objectName": "TopBorder"
+      },
+      {
+        "objectName": "NewPanelSprite"
+      },
+      {
+        "objectName": "Background"
       }
     ]
   },
@@ -2589,7 +2627,7 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "BuiltinCommonInstructions::And"
               },
               "parameters": [],
               "subInstructions": [
@@ -2607,14 +2645,12 @@
                 },
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::CompareStrings"
                   },
                   "parameters": [
-                    "MovingBubble",
-                    "TopBorder",
-                    "",
-                    "",
-                    "yes"
+                    "MovingBubble.AnimationName()",
+                    "=",
+                    "BoardBubble.AnimationName()"
                   ]
                 }
               ]
@@ -3416,12 +3452,36 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Bounce",
       "type": "Bounce::Bounce"
     },
     {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
     },
     {
       "name": "Turret",
