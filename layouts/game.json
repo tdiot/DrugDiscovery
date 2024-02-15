@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9233457991380384,
+    "zoomFactor": 0.6201941802755958,
     "windowMask": false
   },
   "objectsGroups": [
@@ -383,11 +383,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "BlueBubble.png",
+                  "image": "Blue",
                   "points": [
                     {
                       "name": "Right",
@@ -455,11 +456,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "PurpuleBubble.png",
+                  "image": "Purple",
                   "points": [
                     {
                       "name": "Right",
@@ -527,11 +529,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "RedBubble.png",
+                  "image": "Red",
                   "points": [
                     {
                       "name": "Right",
@@ -767,11 +770,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "BlueBubble.png",
+                  "image": "Blue2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -896,11 +900,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "PurpuleBubble.png",
+                  "image": "Purple2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -960,11 +965,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "RedBubble.png",
+                  "image": "Red2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1096,11 +1102,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "BlueBubble.png",
+                  "image": "Blue3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1125,11 +1132,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "PurpuleBubble.png",
+                  "image": "Purple3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1154,11 +1162,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "RedBubble.png",
+                  "image": "Red3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
